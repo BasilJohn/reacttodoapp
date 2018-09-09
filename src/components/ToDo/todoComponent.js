@@ -37,8 +37,10 @@ export default class ToDo extends Component {
         }
 
         this.setState({
-            isCompleted: stateFlag
+            isCompleted: stateFlag,
+            editIndex: null
         });
+        
 
         this.props.addItemtoCompletedList(value, index,stateFlag);
     }
